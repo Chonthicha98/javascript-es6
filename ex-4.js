@@ -1,14 +1,21 @@
 let studentProfile = {
-  name: "John",
+  name: 'John',
   age: 20,
   scores: {
     thai: 40,
   },
-  hobbies: ["Football", "Coding"],
+  hobbies: ['Football', 'Coding'],
 };
 
-let additionalHobbies = ["Painting", "Yoga"];
+let additionalHobbies = ['Painting', 'Yoga'];
 
 // Start coding here
+let newStudentProfile = {
+  ...studentProfile,
+  hobbies: [...studentProfile.hobbies, ...additionalHobbies],
+};
 
 console.log(newStudentProfile);
+
+//same line question 2 but that is {obj}
+// this one for [array]

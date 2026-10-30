@@ -1,5 +1,5 @@
 let studentProfile = {
-  name: "John",
+  name: 'John',
   age: 20,
   scores: {
     thai: 40,
@@ -7,10 +7,13 @@ let studentProfile = {
 };
 
 let additionalProperties = {
-  photo: "https://placedog.net/500",
-  hobbies: ["Football", "Coding"],
+  photo: 'https://placedog.net/500',
+  hobbies: ['Football', 'Coding'],
 };
 
 // Start coding here
+let newStudentProfile = { ...studentProfile, ...additionalProperties };
 
 console.log(newStudentProfile);
+
+//...spread operator

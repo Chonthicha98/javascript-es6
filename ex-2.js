@@ -1,5 +1,5 @@
 let studentProfile = {
-  name: "John",
+  name: 'John',
   age: 20,
   scores: {
     thai: 40,
@@ -13,5 +13,12 @@ let studentScores = {
 };
 
 // Start coding here
+let newStudentProfile = {
+  ...studentProfile,
+  scores: { ...studentProfile.scores, ...studentScores },
+};
 
 console.log(newStudentProfile);
+
+//...spread (stuP + reassign but keep stuP Thai scores.
+// then bridging math/eng/tech scores inside obj that inside studentProfile obj).
